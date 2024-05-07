@@ -9,14 +9,14 @@ export default function ProjectsSidebar({onStartAddProject,projects,onSelectProj
         </div>
         <ul class="list-group">
             {projects.map(project => {
-                let liCSSClasses = "list-group-item bg-dark p-0 m-0";
+                let liCSSClasses = "list-group-item  p-0 m-0";
                 let btnCSSClasses = "px-2 w-100 btn";
 
                 if(project.id === selectedProjectId){
-                    btnCSSClasses += "btn-primary";
+                    btnCSSClasses += ' btn-light';
                 }
                 else{
-                    btnCSSClasses += "btn-secondary";
+                    btnCSSClasses += ' btn-dark';
                 }
 
                 return (
